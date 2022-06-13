@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "196551738655",
+    "firebase_url": "https://kkkkkkk-fda20-default-rtdb.firebaseio.com",
+    "project_id": "kkkkkkk-fda20",
+    "storage_bucket": "kkkkkkk-fda20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196551738655:android:16ea52e5ec7242c4539c2a",
+        "android_client_info": {
+          "package_name": "com.example.doan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196551738655-nidnf9e2brprfk567ba13ag53kf05scb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5R_lAZtPjnVkS7an6Qk505AL_O9kbzkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196551738655-nidnf9e2brprfk567ba13ag53kf05scb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
