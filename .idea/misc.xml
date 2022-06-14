@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1485" />
+        <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable/chotdien.xml" value="0.1725" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable/ic_button.xml" value="0.2215" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1485" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable/login.xml" value="0.2215" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/drawable/round.xml" value="0.2225" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_caidatnam.xml" value="0.25" />
-        <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_diennang.xml" value="0.25" />
+        <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_diennang.xml" value="0.33" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_nhanam.xml" value="0.25" />
         <entry key="..\:/Users/KimAnh/AndroidStudioProjects/Doan/app/src/main/res/layout/activity_setting.xml" value="0.25842696629213485" />

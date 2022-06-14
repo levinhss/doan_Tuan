@@ -190,7 +190,6 @@ public class caidatnam extends AppCompatActivity {
             }
         });
     }
-
     void anhxa()
     {
         edit1 = findViewById(R.id.editTextTextPersonName6);
@@ -203,6 +202,7 @@ public class caidatnam extends AppCompatActivity {
         btn2 = findViewById(R.id.button8);
         xn = findViewById(R.id.button6);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu,menu);

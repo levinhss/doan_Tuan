@@ -46,11 +46,15 @@ public class nhanam extends AppCompatActivity {
 
                 if (dataSnapshot.getValue().toString().equals("1")) {
                     img1.setImageResource(R.drawable.ic_fanon);
+                    btn1.setText("ON");
+                    btn1.setBackgroundColor(Color.RED);
                     fan1 = true;
                 }
                 if (dataSnapshot.getValue().toString().equals("0")) {
                     fan1 = false;
                     img1.setImageResource(R.drawable.ic_fanoff);
+                    btn1.setText("OFF");
+                    btn1.setBackgroundColor(Color.GRAY);
                 }
             }
             @Override
@@ -66,10 +70,14 @@ public class nhanam extends AppCompatActivity {
                 if (dataSnapshot.getValue().toString().equals("1")) {
                     img2.setImageResource(R.drawable.ic_fanon);
                     fan2 = true;
+                    btn2.setText("ON");
+                    btn2.setBackgroundColor(Color.RED);
                 }
                 if (dataSnapshot.getValue().toString().equals("0")) {
                     fan2 = false;
                     img2.setImageResource(R.drawable.ic_fanoff);
+                    btn2.setText("OFF");
+                    btn2.setBackgroundColor(Color.GRAY);
                 }
             }
             @Override
@@ -85,10 +93,14 @@ public class nhanam extends AppCompatActivity {
                 if (dataSnapshot.getValue().toString().equals("1")) {
                     img3.setImageResource(R.drawable.ic_on);
                     den = true;
+                    btn3.setText("ON");
+                    btn3.setBackgroundColor(Color.RED);
                 }
                 if (dataSnapshot.getValue().toString().equals("0")) {
                     den = false;
                     img3.setImageResource(R.drawable.ic_off);
+                    btn3.setText("OFF");
+                    btn3.setBackgroundColor(Color.GRAY);
                 }
             }
             @Override
@@ -104,10 +116,14 @@ public class nhanam extends AppCompatActivity {
                 if (dataSnapshot.getValue().toString().equals("1")) {
                     img4.setImageResource(R.drawable.ic_mottoron);
                     bom = true;
+                    btn4.setText("ON");
+                    btn4.setBackgroundColor(Color.RED);
                 }
                 if (dataSnapshot.getValue().toString().equals("0")) {
                     bom = false;
                     img4.setImageResource(R.drawable.ic_motoroff);
+                    btn4.setText("OFF");
+                    btn4.setBackgroundColor(Color.GRAY);
                 }
             }
             @Override
@@ -186,11 +202,13 @@ public class nhanam extends AppCompatActivity {
                 if(mode==false) {
                     fan2 = !fan2;
                     if (fan2 == false) {
+
                         img2.setImageResource(R.drawable.ic_motoroff);
                         database.child("Control_device").child("Fan2").setValue("0");
                     } else {
                         img2.setImageResource(R.drawable.ic_mottoron);
                         database.child("Control_device").child("Fan2").setValue("1");
+
                     }
                 }
                 if(mode==true) {
@@ -204,11 +222,13 @@ public class nhanam extends AppCompatActivity {
                 if(mode==false) {
                     den = !den;
                     if (den == false) {
+
                         img3.setImageResource(R.drawable.ic_off);
                         database.child("Control_device").child("Lamp").setValue("0");
                     } else {
                         img3.setImageResource(R.drawable.ic_on);
                         database.child("Control_device").child("Lamp").setValue("1");
+
                     }
                 }
                 if(mode==true) {
@@ -222,11 +242,13 @@ public class nhanam extends AppCompatActivity {
                 if(mode==false) {
                     bom = !bom;
                     if (bom == false) {
+
                         img4.setImageResource(R.drawable.ic_motoroff);
                         database.child("Control_device").child("Bump").setValue("0");
                     } else {
                         img4.setImageResource(R.drawable.ic_mottoron);
                         database.child("Control_device").child("Bump").setValue("1");
+
                     }
                 }
                 if(mode==true) {
