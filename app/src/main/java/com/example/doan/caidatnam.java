@@ -34,7 +34,7 @@ public class caidatnam extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         DatabaseReference database = FirebaseDatabase.getInstance().getReference();
-        database.child("Threshold").child("Temperature_thres1").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Temperature_thres1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -48,7 +48,7 @@ public class caidatnam extends AppCompatActivity {
 
             }
         });
-        database.child("Threshold").child("Temperature_thres2").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Temperature_thres2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -62,7 +62,7 @@ public class caidatnam extends AppCompatActivity {
 
             }
         });
-        database.child("Threshold").child("Humidity_thres1").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Humidity_thres1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -76,7 +76,7 @@ public class caidatnam extends AppCompatActivity {
 
             }
         });
-        database.child("Threshold").child("Humidity_thres2").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Humidity_thres2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -90,7 +90,7 @@ public class caidatnam extends AppCompatActivity {
 
             }
         });
-        database.child("Threshold").child("Light_thres1").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Light_thres1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -104,7 +104,7 @@ public class caidatnam extends AppCompatActivity {
 
             }
         });
-        database.child("Threshold").child("Light_thres2").addValueEventListener(new ValueEventListener() {
+        database.child("Control_device").child("Threshold").child("Light_thres2").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -163,12 +163,12 @@ public class caidatnam extends AppCompatActivity {
                 L1= Integer.parseInt(edit6.getText().toString());
                 if(T1>=0&&T1<T2&&T2<=100&&H1>=0&&H1<H2&&H2<=100&&L1>=0&&L1<L2&&L2<=100)
                 {
-                            database.child("Threshold").child("Temperature_thres1").setValue(edit1.getText().toString());
-                            database.child("Threshold").child("Temperature_thres2").setValue(edit2.getText().toString());
-                            database.child("Threshold").child("Humidity_thres1").setValue(edit3.getText().toString());
-                            database.child("Threshold").child("Humidity_thres2").setValue(edit4.getText().toString());
-                            database.child("Threshold").child("Light_thres1").setValue(edit5.getText().toString());
-                            database.child("Threshold").child("Light_thres2").setValue(edit6.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Temperature_thres1").setValue(edit1.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Temperature_thres2").setValue(edit2.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Humidity_thres1").setValue(edit3.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Humidity_thres2").setValue(edit4.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Light_thres1").setValue(edit5.getText().toString());
+                            database.child("Control_device").child("Threshold").child("Light_thres2").setValue(edit6.getText().toString());
                             Toast.makeText(getApplicationContext(), "Nhập thành công", Toast.LENGTH_LONG).show();
                 }
                 else if(T1>=0&&T1>=T2&&T2<=100)
@@ -218,6 +218,10 @@ public class caidatnam extends AppCompatActivity {
             case R.id.dien:
                 Intent intent1 = new Intent(caidatnam.this,diennang.class);
                 startActivity(intent1);
+                break;
+            case R.id.setting:
+                Intent intent2 = new Intent(caidatnam.this,setting.class);
+                startActivity(intent2);
                 break;
             case R.id.home1:
                 Intent intent3 = new Intent(caidatnam.this,trangchu.class);

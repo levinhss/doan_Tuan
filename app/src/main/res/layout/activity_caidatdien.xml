@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg6"
+    tools:context=".caidatdien">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="-575dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/ic_ic_tiendien"
+            android:textColor="#0E0E0E" />
+
+        <TextView
+            android:layout_height="100dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="40dp"
+            android:text="Biểu giá bán lẻ điện"
+            android:textColor="#0E0E0E"
+            android:textSize="23dp" />
+    </TableRow>
+    <TableLayout>
+        <TableRow>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="70dp"
+                android:text="GIÁ ĐIỆN"
+                android:textColor="#0C0C0C"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:paddingLeft="20dp"
+                android:text="SẢN LƯỢNG"
+                android:textColor="#050505"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:paddingLeft="30dp"
+                android:text="THÀNH TIỀN"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingLeft="55dp"
+                android:text="(đồng/kwh)"
+                android:textColor="#EF0A58"
+                android:textSize="12dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingLeft="25dp"
+                android:text="(kwh)"
+                android:textColor="#EF0A58"
+                android:textSize="12dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:text="(đồng)"
+                android:textColor="#EF0A58"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_height="30dp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:text="1678"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/sl1"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="52dp"
+                android:text="6500"
+                android:textColor="#050505"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:text="1734"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/sl2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#050505"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_height="40dp"
+                android:paddingLeft="52dp"
+                android:text="650"
+                android:layout_width="wrap_content"
+                android:id="@+id/tt2"
+                android:textColor="#070707"
+                android:textSize="15dp" />
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:inputType="number"
+                android:text="2014"
+                android:id="@+id/editTextNumber3"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/sl3"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#070707"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="52dp"
+                android:text="650"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                />
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:text="2536"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/sl4"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#0B0A0A"
+                android:textSize="15dp" />
+
+            <TextView
+                android:paddingLeft="52dp"
+                android:text="650"
+                android:layout_width="wrap_content"
+                android:id="@+id/tt4"
+                android:textColor="#121212"
+                android:textSize="15dp"
+                android:layout_height="40dp" />
+        </TableRow>
+        <TableRow>
+
+            <EditText
+                android:inputType="number"
+                android:text="2834"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/editTextNumber5"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:id="@+id/sl5" />
+
+            <TextView
+                android:layout_height="40dp"
+                android:paddingLeft="52dp"
+                android:text="650"
+                android:layout_width="wrap_content"
+                android:id="@+id/tt5"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:inputType="number"
+                android:text="2927"
+                android:id="@+id/editTextNumber6"
+                android:layout_width="43dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="match_parent"
+                android:textColor="#070707"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="80dp"
+                android:text="50"
+                android:textColor="#090909"
+                android:textSize="15dp"
+                android:id="@+id/sl6" />
+
+            <TextView
+                android:id="@+id/tt6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:paddingLeft="52dp"
+                android:text="650"
+                android:textColor="#020202"
+                android:textSize="15dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout>
+        <TableRow>
+            <TextView
+                android:text="Cộng:"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:layout_height="40dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:paddingRight="0dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="156dp"
+                android:text="5000"
+                android:textColor="#090909"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/ssl" />
+
+            <TextView
+                android:id="@+id/st"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="46dp"
+                android:paddingRight="0dp"
+                android:paddingTop="5dp"
+                android:text="650"
+                android:textColor="#090909"
+                android:textSize="15dp" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout>
+        <TableRow>
+            <TextView
+                android:text="Thuế GTGT(%):"
+                android:textColor="#0C0C0C"
+                android:textSize="18dp"
+                android:layout_height="40dp" />
+            <EditText
+                android:inputType="number"
+                android:text="10"
+                android:id="@+id/editTextNumber7"
+                android:textAlignment="center"
+                android:layout_width="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:textColor="#070707"
+                android:textSize="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="123dp"
+                android:id="@+id/thue"
+                android:layout_height="wrap_content"
+                android:text="650"
+                android:textColor="#0C0C0C"
+                android:textSize="15dp"
+                />
+        </TableRow>
+    </TableLayout>
+    <TableLayout>
+        <TableRow>
+
+            <TextView
+
+                android:layout_height="50dp"
+                android:text="Tổng cộng:"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tongtien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="212.5dp"
+                android:paddingLeft="1dp"
+                android:text="650"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout>
+        <Button
+            android:text="XÁC NHẬN"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#0B2FF8"
+            android:layout_height="60dp"
+            android:id="@+id/button16"
+            />
+    </TableLayout>
+</TableLayout>

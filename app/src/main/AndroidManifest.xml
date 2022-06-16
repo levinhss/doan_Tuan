@@ -14,25 +14,33 @@
         android:theme="@style/Theme.Doan"
         tools:targetApi="31">
         <activity
-            android:name=".caidatnam"
-            android:label="Cài Đặt Nhà Nấm"
+            android:name=".reset"
+            android:label="Reset điện năng"
             android:exported="false" />
+        <activity
+            android:name=".caidatdien"
+            android:exported="false"
+            android:label="Cài Đặt Tiền Điện" />
+        <activity
+            android:name=".caidatnam"
+            android:exported="false"
+            android:label="Cài Đặt Nhà Nấm" />
         <activity
             android:name=".setting"
-            android:label="Cài Đặt"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Cài Đặt" />
         <activity
             android:name=".diennang"
-            android:label="Điện Năng"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Điện Năng" />
         <activity
             android:name=".nhanam"
-            android:label="Nhà Nấm"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Nhà Nấm" />
         <activity
             android:name=".trangchu"
-            android:label="Trang Chủ"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Trang Chủ" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

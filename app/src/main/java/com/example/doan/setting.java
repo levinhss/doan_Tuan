@@ -37,7 +37,7 @@ public class setting extends AppCompatActivity {
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(setting.this,trangchu.class);
+                Intent intent = new Intent(setting.this,caidatdien.class);
                 startActivity(intent);
             }
         });
