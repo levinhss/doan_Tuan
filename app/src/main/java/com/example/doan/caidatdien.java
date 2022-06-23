@@ -269,10 +269,13 @@ public class caidatdien extends AppCompatActivity {
             t16.setText(String.format("%.1f",(thangnay-400)*cd6));
             tdthangnay=50*cd1+50*cd2+100*cd3+100*cd4+100*cd5+(thangnay-400)*cd6;
         }
-        tiendien1.setText(String.valueOf(tdthangnay));
-        tienthue.setText(String.valueOf(tdthangnay*(cd7/100)));
+      //  tiendien1.setText(String.valueOf(tdthangnay));
+        tiendien1.setText(String.format("%.1f",tdthangnay));
+      //  tienthue.setText(String.valueOf(tdthangnay*(cd7/100)));
+        tienthue.setText(String.format("%.1f",tdthangnay*(cd7/100)));
         tien = tdthangnay + tdthangnay*(cd7/100);
-        tdt.setText(String.valueOf(tien));
+      //  tdt.setText(String.valueOf(tien));
+        tdt.setText(String.format("%.1f",tdthangnay + tdthangnay*(cd7/100)));
     }
     void anhxa()
     {

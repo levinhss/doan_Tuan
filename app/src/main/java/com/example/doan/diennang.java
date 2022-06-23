@@ -25,7 +25,7 @@ public class diennang extends AppCompatActivity {
    float cd1,cd2,cd3,cd4,cd5,cd6,cd7,tdthangnay;
     EditText ed1;
     Button xn;
-    int homqua, homnay, thangroi, thangnay,cshomtruoc,csthangroi,cshomqua,csthangtruoc,enr;
+    float homqua, homnay, thangroi, thangnay,cshomtruoc,csthangroi,cshomqua,csthangtruoc,enr;
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +131,8 @@ public class diennang extends AppCompatActivity {
         database.child("Control_device").child("cs").child("csHomtruoc").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                cshomtruoc =  Integer.parseInt(dataSnapshot.getValue().toString());
+                cshomtruoc =  Float.parseFloat(dataSnapshot.getValue().toString()); // Integer.parseInt(dataSnapshot.getValue().toString());
+
             }
             @Override
             public void onCancelled(DatabaseError error) {
@@ -141,9 +142,11 @@ public class diennang extends AppCompatActivity {
         database.child("Control_device").child("cs").child("csHomqua").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                cshomqua =  Integer.parseInt(dataSnapshot.getValue().toString());
+              //  cshomqua =  Integer.parseInt(dataSnapshot.getValue().toString());
+                cshomqua =   Float.parseFloat(dataSnapshot.getValue().toString());
                 homqua = cshomqua -cshomtruoc;
-                hq.setText(String.valueOf(homqua)+" Kwh");
+                hq.setText(String.format("%.1f",homqua)+" Kwh");
+             //   hq.setText(String.valueOf(homqua)+" Kwh");
             }
             @Override
             public void onCancelled(DatabaseError error) {
@@ -153,7 +156,8 @@ public class diennang extends AppCompatActivity {
         database.child("Control_device").child("cs").child("csThangtruoc").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                csthangtruoc =  Integer.parseInt(dataSnapshot.getValue().toString());
+                csthangtruoc  = Float.parseFloat(dataSnapshot.getValue().toString());
+             //   csthangtruoc =  Integer.parseInt(dataSnapshot.getValue().toString());
             }
             @Override
             public void onCancelled(DatabaseError error) {
@@ -163,9 +167,11 @@ public class diennang extends AppCompatActivity {
         database.child("Control_device").child("cs").child("csThangroi").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                csthangroi =  Integer.parseInt(dataSnapshot.getValue().toString());
+               // csthangroi =  Integer.parseInt(dataSnapshot.getValue().toString());
+                csthangroi  =  Float.parseFloat(dataSnapshot.getValue().toString());
                 thangroi = csthangroi - csthangtruoc;
-                thangt.setText(String.valueOf(thangroi)+" Kwh");
+                thangt.setText(String.format("%.1f",thangroi)+" Kwh");
+             //   thangt.setText(String.valueOf(thangroi)+" Kwh");
                 if(thangroi <=50)
                 {
                     tdthangnay=thangroi*cd1;
@@ -232,9 +238,12 @@ public class diennang extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Sdien.setText(dataSnapshot.getValue().toString()+" Kwh");
-                enr = Integer.parseInt(dataSnapshot.getValue().toString());
-                hn.setText(String.valueOf(enr-cshomqua)+" Kwh");
-                thangn.setText(String.valueOf(enr-csthangroi)+" Kwh");
+                enr =  Float.parseFloat(dataSnapshot.getValue().toString());
+             //   enr = Integer.parseInt(dataSnapshot.getValue().toString());
+                hn.setText(String.format("%.1f",enr-cshomqua)+" Kwh");
+
+             //   thangn.setText(String.valueOf(enr-csthangroi)+" Kwh");
+                thangn.setText(String.format("%.1f",enr-csthangroi)+" Kwh");
 
             }
             @Override
